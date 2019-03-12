@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rock+Salt"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Style/style.css" />
+    <title>Papier - Kamień - Nożyce</title>
+  </head>
+  <body>
+    <h1>- Papier - Kamień - Nożyce -</h1>
+    <div class="score_board">
+      <p><span id="user_score">0</span> : <span id="comp_score">0</span></p>
+      <p id="user_badge" class="badge">user</p>
+      <p id="comp_badge" class="badge">comp</p>
+    </div>
+    <p id="result">Spróbuj pokonać maszynę!</p>
+
+    <!-- ---------- GRA ---------- -->
+
+    <div class="game">
+      <div id="combat">
+        <div class="border"></div>
+        <div class="border"><p>VS</p></div>
+        <div class="border"><p id="comp_choice">?</p></div>
+      </div>
+
+      <div id="choices" class="hover_effect">
+        <div id="p" class="choice">
+          <img src="./Img/paper.svg" />
+        </div>
+        <div id="r" class="choice">
+          <img src="./Img/rock.svg" />
+        </div>
+        <div id="s" class="choice">
+          <img src="./Img/scissors.svg" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./Script/app.js"></script>
+  </body>
+</html>
